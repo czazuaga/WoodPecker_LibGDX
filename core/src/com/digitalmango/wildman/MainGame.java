@@ -11,6 +11,7 @@ import com.digitalmango.wildman.tools.Hud;
 public class MainGame extends Game {
 
 	public static int POINTS = 0;
+	public static boolean EN_PARTIDA = false;
 
 	//Resoluciones
 
@@ -67,6 +68,7 @@ public class MainGame extends Game {
 	}
 
 	public void gameOver(){
-
+		Gdx.app.log("Game over","");
+		MainGame.EN_PARTIDA = false;
 	}
 }

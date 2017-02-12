@@ -60,20 +60,20 @@ public class GestorTroncos {
     }
 
     public void destruirTronco (int direction){
-        listaTroncos.get(troncoAdestruir).direction = direction;
-        gameplayScreen.pajaro.atacar(direction);
-        listaTroncos.get(troncoAdestruir).isAlive = false;
-        troncoAdestruir++;
-        if (listaTroncos.get(troncoAdestruir).tipo == 1 && direction == 1){
-            gameplayScreen.mainGame.gameOver();
-        }else if(listaTroncos.get(troncoAdestruir).tipo == 2 && direction == 0){
-            gameplayScreen.mainGame.gameOver();
-        }else{
-            MainGame.POINTS+=1;
-            gameplayScreen.mainGame.hud.actualizarPuntos(MainGame.POINTS);
+        if(MainGame.EN_PARTIDA){
+            listaTroncos.get(troncoAdestruir).direction = direction;
+            gameplayScreen.pajaro.atacar(direction);
+            listaTroncos.get(troncoAdestruir).isAlive = false;
+            troncoAdestruir++;
+            if (listaTroncos.get(troncoAdestruir).tipo == 1 && direction == 1){
+                gameplayScreen.mainGame.gameOver();
+            }else if(listaTroncos.get(troncoAdestruir).tipo == 2 && direction == 0){
+                gameplayScreen.mainGame.gameOver();
+            }else{
+                MainGame.POINTS+=1;
+                gameplayScreen.mainGame.hud.actualizarPuntos(MainGame.POINTS);
+            }
         }
-
-
 
     }
 

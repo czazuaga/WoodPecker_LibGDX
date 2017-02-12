@@ -139,6 +139,10 @@ public class GameplayScreen extends BaseScreen {
 
     }
 
+    public void nuevaPartida(){
+        MainGame.POINTS = 0;
+        MainGame.EN_PARTIDA = true;
+    }
 
 
 }
