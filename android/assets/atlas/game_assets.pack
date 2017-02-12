@@ -1,0 +1,208 @@
+
+game_assets.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+arbustos
+  rotate: false
+  xy: 1, 101
+  size: 240, 400
+  orig: 240, 400
+  offset: 0, 0
+  index: -1
+floor
+  rotate: false
+  xy: 243, 101
+  size: 240, 400
+  orig: 240, 400
+  offset: 0, 0
+  index: -1
+sky
+  rotate: false
+  xy: 485, 101
+  size: 240, 400
+  orig: 240, 400
+  offset: 0, 0
+  index: -1
+tronco
+  rotate: false
+  xy: 1, 35
+  size: 240, 64
+  orig: 240, 64
+  offset: 0, 0
+  index: -1
+tronco_rama_left
+  rotate: false
+  xy: 727, 437
+  size: 240, 64
+  orig: 240, 64
+  offset: 0, 0
+  index: -1
+tronco_rama_right
+  rotate: false
+  xy: 243, 35
+  size: 240, 64
+  orig: 240, 64
+  offset: 0, 0
+  index: -1
+cloud3
+  rotate: false
+  xy: 727, 371
+  size: 128, 64
+  orig: 128, 64
+  offset: 0, 0
+  index: -1
+player_attack1
+  rotate: false
+  xy: 727, 273
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_attack2
+  rotate: false
+  xy: 727, 175
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_attack3
+  rotate: false
+  xy: 727, 77
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_attack4
+  rotate: false
+  xy: 857, 339
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_idle1
+  rotate: false
+  xy: 485, 3
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_idle2
+  rotate: false
+  xy: 583, 3
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+cloud1
+  rotate: false
+  xy: 1, 1
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+flower_happy1
+  rotate: false
+  xy: 969, 453
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+tap
+  rotate: false
+  xy: 67, 1
+  size: 48, 32
+  orig: 48, 32
+  offset: 0, 0
+  index: -1
+flower_happy2
+  rotate: false
+  xy: 825, 289
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flower_happy4
+  rotate: false
+  xy: 825, 289
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flower_happy3
+  rotate: false
+  xy: 825, 239
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flower_sleeping1
+  rotate: false
+  xy: 875, 289
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flower_sleeping2
+  rotate: false
+  xy: 825, 189
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flower_sleeping3
+  rotate: false
+  xy: 875, 239
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flower_sleeping4
+  rotate: false
+  xy: 825, 139
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flower_sleeping5
+  rotate: false
+  xy: 875, 189
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flower_sleeping6
+  rotate: false
+  xy: 825, 89
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flower_sleeping7
+  rotate: false
+  xy: 875, 139
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flower_sleeping8
+  rotate: false
+  xy: 875, 89
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+cloud2
+  rotate: false
+  xy: 681, 83
+  size: 32, 16
+  orig: 32, 16
+  offset: 0, 0
+  index: -1
+buttons
+  rotate: false
+  xy: 117, 17
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
