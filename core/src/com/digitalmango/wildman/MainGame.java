@@ -10,6 +10,7 @@ import com.digitalmango.wildman.tools.Hud;
 
 public class MainGame extends Game {
 
+	public static final int BEST = 0;
 	public static int POINTS = 0;
 	public static boolean EN_PARTIDA = false;
 
@@ -67,8 +68,15 @@ public class MainGame extends Game {
 		gameplayScreen = new GameplayScreen(this, this);
 	}
 
+	public void nuevaPartida(){
+		MainGame.POINTS = 0;
+		MainGame.EN_PARTIDA = true;
+		gameplayScreen.nuevaPartida();
+	}
+
 	public void gameOver(){
 		Gdx.app.log("Game over","");
 		MainGame.EN_PARTIDA = false;
+		hud.menuCreator.mostrarGameOver();
 	}
 }

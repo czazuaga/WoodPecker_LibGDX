@@ -111,7 +111,7 @@ public class GameplayScreen extends BaseScreen {
 
         //Hud render
         batch.begin();
-        mainGame.hud.renderHud(batch);
+        mainGame.hud.renderHud(batch, delta);
         batch.end();
 
         update(delta);
@@ -140,8 +140,7 @@ public class GameplayScreen extends BaseScreen {
     }
 
     public void nuevaPartida(){
-        MainGame.POINTS = 0;
-        MainGame.EN_PARTIDA = true;
+        pajaro.cambiarPosicion(1);
     }
 
 

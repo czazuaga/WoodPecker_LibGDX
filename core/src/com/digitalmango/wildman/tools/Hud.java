@@ -1,10 +1,8 @@
 package com.digitalmango.wildman.tools;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Batch;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
@@ -30,10 +28,13 @@ public class Hud implements Disposable {
     //UI variables Stage stage;
     public Stage stage;
     private Button aButton, bButton;
-    private Skin uiSkin;
+    public Skin uiSkin;
+    Label.LabelStyle ls;
 
-    private Label points;
-    private MainGame mainGame;
+    public Label points;
+    public MainGame mainGame;
+
+    public MenuCreator menuCreator;
 
 
     public Hud(MainGame mainGame){
@@ -56,17 +57,21 @@ public class Hud implements Disposable {
         bButton = new Button(uiSkin.getDrawable("buttons"));
 
 
-        Label.LabelStyle ls = new Label.LabelStyle(mainGame.pixelFont, Color.WHITE);
+        ls = new Label.LabelStyle(mainGame.pixelFont, Color.WHITE);
         points = new Label("",ls);
         actualizarPuntos(MainGame.POINTS);
 
         createTables();
+
+        menuCreator = new MenuCreator(this);
     }
 
 
 
-    public void renderHud(Batch batch){
+    public void renderHud(Batch batch, float delta){
+        stage.act();
         stage.draw();
+        menuCreator.animarUI();
 
     }
 

@@ -5,203 +5,224 @@ filter: Nearest,Nearest
 repeat: none
 arbustos
   rotate: false
-  xy: 1, 101
+  xy: 1, 621
   size: 240, 400
   orig: 240, 400
   offset: 0, 0
   index: -1
 floor
   rotate: false
-  xy: 243, 101
+  xy: 1, 219
   size: 240, 400
   orig: 240, 400
   offset: 0, 0
   index: -1
 sky
   rotate: false
-  xy: 485, 101
+  xy: 243, 621
   size: 240, 400
   orig: 240, 400
   offset: 0, 0
   index: -1
+gameover_panel
+  rotate: false
+  xy: 243, 348
+  size: 199, 271
+  orig: 199, 271
+  offset: 0, 0
+  index: -1
 tronco
   rotate: false
-  xy: 1, 35
+  xy: 1, 153
   size: 240, 64
   orig: 240, 64
   offset: 0, 0
   index: -1
 tronco_rama_left
   rotate: false
-  xy: 727, 437
+  xy: 485, 957
   size: 240, 64
   orig: 240, 64
   offset: 0, 0
   index: -1
 tronco_rama_right
   rotate: false
-  xy: 243, 35
+  xy: 1, 87
   size: 240, 64
   orig: 240, 64
   offset: 0, 0
   index: -1
 cloud3
   rotate: false
-  xy: 727, 371
+  xy: 243, 282
   size: 128, 64
   orig: 128, 64
   offset: 0, 0
   index: -1
 player_attack1
   rotate: false
-  xy: 727, 273
+  xy: 485, 859
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 player_attack2
   rotate: false
-  xy: 727, 175
+  xy: 243, 184
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 player_attack3
   rotate: false
-  xy: 727, 77
+  xy: 485, 761
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 player_attack4
   rotate: false
-  xy: 857, 339
+  xy: 583, 859
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 player_idle1
   rotate: false
-  xy: 485, 3
+  xy: 485, 663
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 player_idle2
   rotate: false
-  xy: 583, 3
+  xy: 583, 761
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
+play_button
+  rotate: false
+  xy: 727, 971
+  size: 84, 50
+  orig: 84, 50
+  offset: 0, 0
+  index: -1
+ranking_button
+  rotate: false
+  xy: 1, 35
+  size: 84, 50
+  orig: 84, 50
+  offset: 0, 0
+  index: -1
 cloud1
   rotate: false
-  xy: 1, 1
+  xy: 373, 314
   size: 64, 32
   orig: 64, 32
   offset: 0, 0
   index: -1
 flower_happy1
   rotate: false
-  xy: 969, 453
+  xy: 243, 134
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
-tap
-  rotate: false
-  xy: 67, 1
-  size: 48, 32
-  orig: 48, 32
-  offset: 0, 0
-  index: -1
 flower_happy2
   rotate: false
-  xy: 825, 289
+  xy: 583, 711
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_happy4
   rotate: false
-  xy: 825, 289
+  xy: 583, 711
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_happy3
   rotate: false
-  xy: 825, 239
+  xy: 813, 973
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping1
   rotate: false
-  xy: 875, 289
+  xy: 87, 37
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping2
   rotate: false
-  xy: 825, 189
+  xy: 863, 973
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping3
   rotate: false
-  xy: 875, 239
+  xy: 137, 37
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping4
   rotate: false
-  xy: 825, 139
+  xy: 913, 973
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping5
   rotate: false
-  xy: 875, 189
+  xy: 187, 37
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping6
   rotate: false
-  xy: 825, 89
+  xy: 963, 973
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping7
   rotate: false
-  xy: 875, 139
+  xy: 293, 134
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping8
   rotate: false
-  xy: 875, 89
+  xy: 583, 661
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
+tap
+  rotate: false
+  xy: 1, 1
+  size: 48, 32
+  orig: 48, 32
+  offset: 0, 0
+  index: -1
 cloud2
   rotate: false
-  xy: 681, 83
+  xy: 444, 603
   size: 32, 16
   orig: 32, 16
   offset: 0, 0
   index: -1
 buttons
   rotate: false
-  xy: 117, 17
+  xy: 681, 939
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
