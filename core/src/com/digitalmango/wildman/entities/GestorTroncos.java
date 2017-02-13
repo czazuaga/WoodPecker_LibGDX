@@ -21,10 +21,7 @@ public class GestorTroncos {
     public GestorTroncos(GameplayScreen gameplayScreen){
         this.gameplayScreen = gameplayScreen;
         listaTroncos = gameplayScreen.listaTroncos;
-
-        for (int i = -1; i < 5001; i ++){
-            insertarTronco();
-        }
+        resetearTroncos();
 
     }
 
@@ -105,6 +102,18 @@ public class GestorTroncos {
 
         Random r = new Random();
         return r.nextInt((max - min) + 1) + min;
+    }
+
+    public void resetearTroncos(){
+            ultimoTipoTronco = 1;
+            contadorTroncosBuenos = 0;
+            contador = 0;
+            troncoAdestruir = 0;
+            listaTroncos.clear();
+            for (int i = -1; i < 5001; i ++){
+                insertarTronco();
+            }
+
     }
 
 }

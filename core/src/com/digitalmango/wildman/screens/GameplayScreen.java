@@ -141,6 +141,7 @@ public class GameplayScreen extends BaseScreen {
 
     public void nuevaPartida(){
         pajaro.cambiarPosicion(1);
+        gestorTroncos.resetearTroncos();
     }
 
 

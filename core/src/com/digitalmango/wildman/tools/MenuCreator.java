@@ -23,8 +23,6 @@ public class MenuCreator {
     private Table bestLabelTable, scoreLabelTable;
     private Image image;
 
-    private int limiteBest = 161;
-    private int limiteScore = 106;
     private int limiteImage = 118;
 
 
@@ -75,13 +73,13 @@ public class MenuCreator {
             public boolean touchDown (InputEvent event, float x, float y,
                                       int pointer, int button) {
                 Gdx.app.log("Play", "");
-                ocultarGameOver();
+                ocultarMenus();
                 return true;
             }
 
         });
 
-        ocultarGameOver();
+        mostrarMainMenu();
 
     }
 
@@ -99,7 +97,7 @@ public class MenuCreator {
         playButton.setVisible(true);
     }
 
-    public void ocultarGameOver(){
+    public void ocultarMenus(){
         image.setVisible(false);
         bestLabelTable.setVisible(false);
         scoreLabelTable.setVisible(false);
@@ -115,17 +113,18 @@ public class MenuCreator {
     }
 
     public void animarUI(){
-
         if(image.getY() > limiteImage){
             image.moveBy(0, -10);
         }
 
         bestLabelTable.setPosition(bestLabelTable.getX(), image.getY() + 44);
-
         scoreLabelTable.setPosition(scoreLabelTable.getX(), image.getY() - 12);
-
     }
 
+    public void mostrarMainMenu(){
+        rankingButton.setVisible(true);
+        playButton.setVisible(true);
+    }
 
 
 }
