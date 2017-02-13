@@ -24,9 +24,14 @@ public class AssetLoader {
         //sounds
         assetManager.load("sound/hit.ogg",Sound.class);
         assetManager.load("sound/death.ogg",Sound.class);
+        assetManager.load("sound/laser.ogg",Sound.class);
+        assetManager.load("sound/player_attack_2.ogg",Sound.class);
+
+
 
         //Atlas
         assetManager.load("atlas/game_assets.pack",TextureAtlas.class);
+
 
         //Finish loading
         assetManager.finishLoading();

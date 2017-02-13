@@ -1,5 +1,6 @@
 package com.digitalmango.wildman.entities;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -12,79 +13,110 @@ import com.digitalmango.wildman.MainGame;
 public class Barra {
     public Sprite sprite;
     private MainGame mainGame;
-
-    //Logic
-    float count = 8;
-    int timer = 0;
+    private TextureRegion[] regions;
 
     public Barra(MainGame mainGame){
         this.mainGame = mainGame;
+
+        regions = new TextureRegion[17];
+        for(int i = 1; i < 17; i++){
+            regions[i] = new TextureRegion(mainGame.assetLoader.getAssetManager()
+                    .get("atlas/game_assets.pack",TextureAtlas.class).findRegion("bar" + i));
+        }
+
         sprite = new Sprite();
         sprite.setBounds(57,20,126,16);
-        sprite.setRegion(new TextureRegion(mainGame.assetLoader.getAssetManager()
-                .get("atlas/game_assets.pack",TextureAtlas.class).findRegion("bar1")),0,0,63,8);
+        sprite.setRegion(regions[1],0,0,63,8);
     }
 
     public void update(float delta){
-        count = count - 1 * delta;
 
         actualizarBarra();
 
-            if (count > 0.15f){
-                count = 8f;
-                timer = 8;
+        if(MainGame.EN_PARTIDA){
+            MainGame.TIEMPO = MainGame.TIEMPO - 2.8f * delta;
+        }
+
+        if(MainGame.MOSTRAR_BARRA){
+            sprite.setAlpha(1);
+        }else{
+            sprite.setAlpha(0);
+        }
+
+            if (MainGame.TIEMPO < 0f && MainGame.EN_PARTIDA){
+                mainGame.gameOver();
+                mainGame.gameplayScreen.pajaro.death();
             }
 
         }
 
     private void actualizarBarra() {
-        if (count < 8f && count >= 7.5f){
-
+        if (MainGame.TIEMPO < 8f){
+            sprite.setRegion(regions[1],0,0,63,8);
         }
 
-        if (count < 7.5f && count >= 7.0f){
-
+        if (MainGame.TIEMPO < 7.5f){
+            sprite.setRegion(regions[2],0,0,63,8);
         }
 
-        if (count < 7.0f && count >= 6.5f){
-
+        if (MainGame.TIEMPO < 7.0f){
+            sprite.setRegion(regions[3],0,0,63,8);
         }
 
-        if (count < 6.5f && count >= 6.0f){
-
+        if (MainGame.TIEMPO <= 6.5f){
+            sprite.setRegion(regions[4],0,0,63,8);
         }
 
-        if (count < 6.0f && count >= 5.5f){
-
+        if (MainGame.TIEMPO <= 6.0f){
+            sprite.setRegion(regions[5],0,0,63,8);
         }
 
-        if (count < 5.5f && count >= 4.0f){
-
+        if (MainGame.TIEMPO <= 5.5f){
+            sprite.setRegion(regions[6],0,0,63,8);
         }
 
-        if (count < 4.0f && count >= 3.5f){
-
+        if (MainGame.TIEMPO <= 5.0f){
+            sprite.setRegion(regions[7],0,0,63,8);
         }
 
-        if (count < 3.5f && count >= 2.0f){
-
+        if (MainGame.TIEMPO <= 4.5f){
+            sprite.setRegion(regions[8],0,0,63,8);
         }
 
-        if (count < 2.0f && count >= 1.5f){
-
+        if (MainGame.TIEMPO <= 4.0f){
+            sprite.setRegion(regions[9],0,0,63,8);
         }
 
-        if (count < 1.5f && count >= 1.0f){
-
+        if (MainGame.TIEMPO <= 3.5f){
+            sprite.setRegion(regions[10],0,0,63,8);
         }
 
-        if (count < 1.0f && count >= 0.5f){
-
+        if (MainGame.TIEMPO <= 3.0f){
+            sprite.setRegion(regions[11],0,0,63,8);
         }
 
-        if (count < 0.5f && count >= 0.0f){
-
+        if (MainGame.TIEMPO <= 2.5f){
+            sprite.setRegion(regions[12],0,0,63,8);
         }
+
+        if (MainGame.TIEMPO <= 2.0f){
+            sprite.setRegion(regions[13],0,0,63,8);
+        }
+
+        if (MainGame.TIEMPO <= 1.5f){
+            sprite.setRegion(regions[14],0,0,63,8);
+        }
+
+        if (MainGame.TIEMPO <= 1.0f){
+            sprite.setRegion(regions[15],0,0,63,8);
+        }
+
+        if (MainGame.TIEMPO <= 0.5f){
+            sprite.setRegion(regions[16],0,0,63,8);
+        }
+
+
+        Gdx.app.log("time: " + MainGame.TIEMPO,"");
     }
 
 }

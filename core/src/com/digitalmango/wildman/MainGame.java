@@ -6,12 +6,14 @@ import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.digitalmango.wildman.screens.GameplayScreen;
+import com.digitalmango.wildman.screens.SplashScreen;
 import com.digitalmango.wildman.tools.AssetLoader;
 import com.digitalmango.wildman.tools.Hud;
 
 public class MainGame extends Game {
 
-	public static int TIEMPO = 16;
+	public static boolean MOSTRAR_BARRA = false;
+	public static float TIEMPO = 8;
 	public static final int BEST = 0;
 	public static int POINTS = 0;
 	public static int NUMERO_PARTIDAS = 0;
@@ -33,6 +35,7 @@ public class MainGame extends Game {
 
 	//Gestión de pantalla
 	public GameplayScreen gameplayScreen;
+	public SplashScreen splashScreen;
 
 	public Hud hud;
 	private Music levelMusic, gameOverMusic;
@@ -56,11 +59,7 @@ public class MainGame extends Game {
 
 		loadScreens();
 
-		this.setScreen(gameplayScreen);
-
-		levelMusic.setLooping(true);
-		levelMusic.setVolume(MainGame.MUSIC_VOL);
-		levelMusic.play();
+		this.setScreen(splashScreen);
 
 	}
 	
@@ -82,10 +81,12 @@ public class MainGame extends Game {
 
 		hud = new Hud(this);
 		gameplayScreen = new GameplayScreen(this, this);
+		splashScreen = new SplashScreen(this, this);
 	}
 
 	public void nuevaPartida(){
 		MainGame.POINTS = 0;
+		MainGame.TIEMPO = 8;
 		MainGame.EN_PARTIDA = true;
 		gameplayScreen.nuevaPartida();
 		gameplayScreen.pajaro.isDEAD = false;
@@ -132,4 +133,9 @@ public class MainGame extends Game {
 
 	}
 
+	public void comenzar() {
+		levelMusic.setLooping(true);
+		levelMusic.setVolume(MainGame.MUSIC_VOL);
+		levelMusic.play();
+	}
 }

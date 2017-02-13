@@ -112,6 +112,8 @@ public class MenuCreator {
 
         MainGame.NUMERO_PARTIDAS++;
         hud.mainGame.nuevaPartida();
+
+        MainGame.MOSTRAR_BARRA = true;
     }
 
     public void actualizarLabels(){
@@ -128,6 +130,7 @@ public class MenuCreator {
                 rankingButton.setVisible(true);
                 playButton.setVisible(true);
                 cargarGameover = false;
+                MainGame.MOSTRAR_BARRA = false;
             }
         }
 

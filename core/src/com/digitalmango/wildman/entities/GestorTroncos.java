@@ -77,6 +77,10 @@ public class GestorTroncos {
             }else{
                 picotazoSound.play(MainGame.SFX_VOL);
                 MainGame.POINTS+=1;
+
+                if(MainGame.TIEMPO <=8){
+                    MainGame.TIEMPO+=0.5f;
+                }
                 gameplayScreen.mainGame.hud.actualizarPuntos(MainGame.POINTS);
             }
         }
