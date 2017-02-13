@@ -25,7 +25,7 @@ public class AssetLoader {
         assetManager.load("sound/hit.ogg",Sound.class);
         assetManager.load("sound/death.ogg",Sound.class);
         assetManager.load("sound/laser.ogg",Sound.class);
-        assetManager.load("sound/player_attack_2.ogg",Sound.class);
+        assetManager.load("sound/rise.ogg",Sound.class);
 
 
 
