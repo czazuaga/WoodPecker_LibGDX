@@ -24,6 +24,10 @@ public class MenuCreator {
     private Image image;
 
     private int limiteImage = 118;
+    private boolean cargarGameover = false;
+
+    public boolean contarGameover = false;
+    private float gameOverRegresionCounter = 0;
 
 
     public MenuCreator(Hud hud){
@@ -33,7 +37,7 @@ public class MenuCreator {
         playButton = new Button(hud.uiSkin.getDrawable("play_button"));
         bestLabel = new Label("",hud.ls);
         scoreLabel = new Label("",hud.ls);
-        image = new Image(hud.mainGame.getAssetAtlas().findRegion("gameover_panel"));
+        image = new Image(hud.uiSkin,"title_panel");
 
         bestLabelTable = new Table();
         bestLabelTable.setFillParent(false);
@@ -84,6 +88,7 @@ public class MenuCreator {
     }
 
     public void mostrarGameOver(){
+        image.setDrawable(hud.uiSkin,"gameover_panel");
 
         image.setPosition(image.getX(), image.getX() + MainGame.SCREEN_HEIGHT);
         scoreLabelTable.setPosition(scoreLabelTable.getX(), scoreLabelTable.getY() + MainGame.SCREEN_HEIGHT);
@@ -93,8 +98,9 @@ public class MenuCreator {
         image.setVisible(true);
         bestLabelTable.setVisible(true);
         scoreLabelTable.setVisible(true);
-        rankingButton.setVisible(true);
-        playButton.setVisible(true);
+
+        cargarGameover = true;
+
     }
 
     public void ocultarMenus(){
@@ -104,6 +110,7 @@ public class MenuCreator {
         rankingButton.setVisible(false);
         playButton.setVisible(false);
 
+        MainGame.NUMERO_PARTIDAS++;
         hud.mainGame.nuevaPartida();
     }
 
@@ -112,18 +119,45 @@ public class MenuCreator {
         scoreLabel.setText(MainGame.POINTS + "");
     }
 
-    public void animarUI(){
+    public void animarUI(float delta){
         if(image.getY() > limiteImage){
             image.moveBy(0, -10);
+        }else{
+            if(cargarGameover){
+                hud.mainGame.reproducirMusica(1);
+                rankingButton.setVisible(true);
+                playButton.setVisible(true);
+                cargarGameover = false;
+            }
         }
 
         bestLabelTable.setPosition(bestLabelTable.getX(), image.getY() + 44);
         scoreLabelTable.setPosition(scoreLabelTable.getX(), image.getY() - 12);
+
+
+        regresionGameover(delta);
+
     }
 
+
+
     public void mostrarMainMenu(){
+        image.setDrawable(hud.uiSkin,"title_panel");
+
         rankingButton.setVisible(true);
         playButton.setVisible(true);
+    }
+
+    private void regresionGameover(float delta) {
+        if(contarGameover){
+            gameOverRegresionCounter = gameOverRegresionCounter + 1 * delta;
+            if(gameOverRegresionCounter > 1.0f){
+                mostrarGameOver();
+                contarGameover = false;
+            }
+        }else{
+            gameOverRegresionCounter = 0;
+        }
     }
 
 

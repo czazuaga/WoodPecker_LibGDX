@@ -12,7 +12,7 @@ import com.digitalmango.wildman.MainGame;
 
 public class DefinicionPajaro {
 
-    Animation attackAnimation, idleAnimation;
+    Animation attackAnimation, idleAnimation, deathAnimation;
     Sprite sprite;
     TextureRegion currentFrame;
 
@@ -31,6 +31,12 @@ public class DefinicionPajaro {
             frames.add(new TextureRegion(mainGame.getAssetAtlas().findRegion("player_idle" + i), 0 , 0, 96, 96));
         }
         idleAnimation = new Animation(0.7f,frames);
+        frames.clear();
+
+        for(int i = 1; i < 9; i++){
+            frames.add(new TextureRegion(mainGame.getAssetAtlas().findRegion("player_death" + i), 0 , 0, 96, 96));
+        }
+        deathAnimation = new Animation(0.2f,frames);
         frames.clear();
 
         sprite = new Sprite();

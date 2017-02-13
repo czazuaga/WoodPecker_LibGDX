@@ -71,7 +71,7 @@ public class Hud implements Disposable {
     public void renderHud(Batch batch, float delta){
         stage.act();
         stage.draw();
-        menuCreator.animarUI();
+        menuCreator.animarUI(delta);
 
     }
 

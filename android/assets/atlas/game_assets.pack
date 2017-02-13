@@ -24,9 +24,23 @@ sky
   orig: 240, 400
   offset: 0, 0
   index: -1
-gameover_panel
+fx
   rotate: false
   xy: 243, 348
+  size: 199, 271
+  orig: 199, 271
+  offset: 0, 0
+  index: -1
+gameover_panel
+  rotate: false
+  xy: 485, 750
+  size: 199, 271
+  orig: 199, 271
+  offset: 0, 0
+  index: -1
+title_panel
+  rotate: false
+  xy: 686, 750
   size: 199, 271
   orig: 199, 271
   offset: 0, 0
@@ -40,7 +54,7 @@ tronco
   index: -1
 tronco_rama_left
   rotate: false
-  xy: 485, 957
+  xy: 485, 684
   size: 240, 64
   orig: 240, 64
   offset: 0, 0
@@ -61,7 +75,7 @@ cloud3
   index: -1
 player_attack1
   rotate: false
-  xy: 485, 859
+  xy: 887, 925
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
@@ -75,42 +89,98 @@ player_attack2
   index: -1
 player_attack3
   rotate: false
-  xy: 485, 761
+  xy: 887, 827
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 player_attack4
   rotate: false
-  xy: 583, 859
+  xy: 243, 86
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death1
+  rotate: false
+  xy: 887, 729
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death2
+  rotate: false
+  xy: 727, 652
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death4
+  rotate: false
+  xy: 727, 652
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death3
+  rotate: false
+  xy: 485, 586
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death5
+  rotate: false
+  xy: 583, 586
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death6
+  rotate: false
+  xy: 444, 488
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death8
+  rotate: false
+  xy: 444, 488
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death7
+  rotate: false
+  xy: 444, 390
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 player_idle1
   rotate: false
-  xy: 485, 663
+  xy: 542, 488
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 player_idle2
   rotate: false
-  xy: 583, 761
+  xy: 542, 390
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 play_button
   rotate: false
-  xy: 727, 971
+  xy: 1, 35
   size: 84, 50
   orig: 84, 50
   offset: 0, 0
   index: -1
 ranking_button
   rotate: false
-  xy: 1, 35
+  xy: 87, 35
   size: 84, 50
   orig: 84, 50
   offset: 0, 0
@@ -124,84 +194,84 @@ cloud1
   index: -1
 flower_happy1
   rotate: false
-  xy: 243, 134
+  xy: 825, 700
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_happy2
   rotate: false
-  xy: 583, 711
+  xy: 173, 37
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_happy4
   rotate: false
-  xy: 583, 711
+  xy: 173, 37
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_happy3
   rotate: false
-  xy: 813, 973
+  xy: 825, 650
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping1
   rotate: false
-  xy: 87, 37
+  xy: 444, 340
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping2
   rotate: false
-  xy: 863, 973
+  xy: 494, 340
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping3
   rotate: false
-  xy: 137, 37
+  xy: 544, 340
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping4
   rotate: false
-  xy: 913, 973
+  xy: 594, 340
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping5
   rotate: false
-  xy: 187, 37
+  xy: 640, 536
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping6
   rotate: false
-  xy: 963, 973
+  xy: 640, 486
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping7
   rotate: false
-  xy: 293, 134
+  xy: 640, 436
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping8
   rotate: false
-  xy: 583, 661
+  xy: 875, 679
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
@@ -215,14 +285,14 @@ tap
   index: -1
 cloud2
   rotate: false
-  xy: 444, 603
+  xy: 985, 1005
   size: 32, 16
   orig: 32, 16
   offset: 0, 0
   index: -1
 buttons
   rotate: false
-  xy: 681, 939
+  xy: 341, 264
   size: 16, 16
   orig: 16, 16
   offset: 0, 0

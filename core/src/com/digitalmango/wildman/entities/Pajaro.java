@@ -1,5 +1,6 @@
 package com.digitalmango.wildman.entities;
 
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.digitalmango.wildman.MainGame;
@@ -11,14 +12,18 @@ import com.digitalmango.wildman.MainGame;
 public class Pajaro {
 
     public DefinicionPajaro definicionPajaro;
+    private FX fx;
     private MainGame mainGame;
+    public boolean isDEAD = false;
 
     //Animations
-    public enum State {IDLE, ATTACKING;}
+    public enum State {IDLE, DEATH, ATTACKING;}
     public State currentState;
     public State previousState;
 
     public float stateTimer;
+
+    private Sound deathSound;
 
     //Logic
     boolean isAtacking = false;
@@ -38,6 +43,10 @@ public class Pajaro {
         definicionPajaro.sprite.setRegion(definicionPajaro.currentFrame);
         definicionPajaro.sprite.setFlip(false, false);
 
+        deathSound = mainGame.assetLoader.getAssetManager().get("sound/death.ogg",Sound.class);
+
+        fx = new FX(mainGame);
+
     }
 
     public void update(float delta, Batch batch){
@@ -45,6 +54,9 @@ public class Pajaro {
         definicionPajaro.currentFrame = getFrame(delta);
         definicionPajaro.sprite.setRegion(definicionPajaro.currentFrame);
         definicionPajaro.sprite.draw(batch);
+
+        fx.update(delta);
+        fx.sprite.draw(batch);
     }
 
     //Logic
@@ -66,6 +78,12 @@ public class Pajaro {
         }
     }
 
+    public void death(){
+        deathSound.play(MainGame.SFX_VOL);
+        fx.activate = true;
+        isDEAD = true;
+    }
+
     //PLAYER STATE MANAGER
 
     public TextureRegion getFrame(float delta) {
@@ -76,6 +94,10 @@ public class Pajaro {
 
             case ATTACKING:
                 textureRegion = (TextureRegion) definicionPajaro.attackAnimation.getKeyFrame(stateTimer, false);
+                break;
+
+            case DEATH:
+                textureRegion = (TextureRegion) definicionPajaro.deathAnimation.getKeyFrame(stateTimer, true);
                 break;
 
             case IDLE:
@@ -110,6 +132,10 @@ public class Pajaro {
             }
 
         return  State.ATTACKING;
+        }
+
+        if(isDEAD){
+            return  State.DEATH;
         }
 
         return State.IDLE;

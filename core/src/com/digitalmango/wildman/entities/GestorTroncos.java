@@ -1,5 +1,6 @@
 package com.digitalmango.wildman.entities;
 
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.digitalmango.wildman.MainGame;
 import com.digitalmango.wildman.screens.GameplayScreen;
@@ -18,11 +19,13 @@ public class GestorTroncos {
     private GameplayScreen gameplayScreen;
     private ArrayList<TroncoAbstracto> listaTroncos;
 
+    private Sound picotazoSound;
+
     public GestorTroncos(GameplayScreen gameplayScreen){
         this.gameplayScreen = gameplayScreen;
         listaTroncos = gameplayScreen.listaTroncos;
         resetearTroncos();
-
+        picotazoSound = gameplayScreen.mainGame.assetLoader.getAssetManager().get("sound/hit.ogg",Sound.class);
     }
 
     public void insertarTronco (){
@@ -64,9 +67,12 @@ public class GestorTroncos {
             troncoAdestruir++;
             if (listaTroncos.get(troncoAdestruir).tipo == 1 && direction == 1){
                 gameplayScreen.mainGame.gameOver();
+                gameplayScreen.pajaro.death();
             }else if(listaTroncos.get(troncoAdestruir).tipo == 2 && direction == 0){
                 gameplayScreen.mainGame.gameOver();
+                gameplayScreen.pajaro.death();
             }else{
+                picotazoSound.play(MainGame.SFX_VOL);
                 MainGame.POINTS+=1;
                 gameplayScreen.mainGame.hud.actualizarPuntos(MainGame.POINTS);
             }

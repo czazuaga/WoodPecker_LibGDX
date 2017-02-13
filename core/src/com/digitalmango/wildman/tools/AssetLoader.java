@@ -18,18 +18,17 @@ public class AssetLoader {
         assetManager = new AssetManager();
 
         //music
-        //assetManager.load("audio/music/heroic_hearth_theme.ogg",Music.class);
+        assetManager.load("sound/level.ogg",Music.class);
+        assetManager.load("sound/gameover.ogg",Music.class);
 
         //sounds
-        //assetManager.load("audio/sounds/get_coin.ogg",Sound.class);
+        assetManager.load("sound/hit.ogg",Sound.class);
+        assetManager.load("sound/death.ogg",Sound.class);
 
         //Atlas
         assetManager.load("atlas/game_assets.pack",TextureAtlas.class);
 
-
-        //Img
-        //assetManager.load("img/tittle.png",Texture.class);
-
+        //Finish loading
         assetManager.finishLoading();
 
     }
