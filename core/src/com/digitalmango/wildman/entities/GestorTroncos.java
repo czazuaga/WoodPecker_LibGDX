@@ -1,5 +1,6 @@
 package com.digitalmango.wildman.entities;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.digitalmango.wildman.MainGame;
@@ -15,6 +16,7 @@ public class GestorTroncos {
     public int troncoAdestruir = 0;
     public int contador = 0;
     public int ultimoTipoTronco = 1;
+    private int troncoRepetido;
     private int contadorTroncosBuenos = 0;
     private GameplayScreen gameplayScreen;
     private ArrayList<TroncoAbstracto> listaTroncos;
@@ -29,32 +31,33 @@ public class GestorTroncos {
     }
 
     public void insertarTronco (){
-        int r;
-        if (contadorTroncosBuenos < 4){
-            r = randomizarEnRangoInt(0,2);
-        }else{
-            r = randomizarEnRangoInt(1,2);
-            contadorTroncosBuenos = 0;
-        }
+        int random = 0;
 
-
-        if(ultimoTipoTronco!= 1 && ultimoTipoTronco!=2){
-            switch (r){
-                case 0 : listaTroncos.add(contador, new Tronco(gameplayScreen.mainGame,contador));
-                    contadorTroncosBuenos++;
-                    break;
+        if(ultimoTipoTronco== 0 && contadorTroncosBuenos > randomizarEnRangoInt(0 ,1)){
+            random = randomizarEnRangoInt(1,2);
+            if(troncoRepetido > 1 && random == ultimoTipoTronco){
+                random = randomizarEnRangoInt(1,2);
+            }
+            switch (random){
                 case 1 : listaTroncos.add(contador, new TroncoRamaLeft(gameplayScreen.mainGame,contador));
+                    ultimoTipoTronco = 1;
                     break;
                 case 2 : listaTroncos.add(contador, new TroncoRamaRight(gameplayScreen.mainGame,contador));
+                    ultimoTipoTronco = 2;
                     break;
             }
+            contadorTroncosBuenos = 0;
         }else{
             listaTroncos.add(contador, new Tronco(gameplayScreen.mainGame,contador));
             contadorTroncosBuenos++;
+            ultimoTipoTronco = 0;
         }
 
-
-        ultimoTipoTronco = r;
+        if(ultimoTipoTronco == random){
+            troncoRepetido++;
+        }else{
+            troncoRepetido = 0;
+        }
         contador++;
 
     }

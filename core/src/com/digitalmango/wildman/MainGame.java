@@ -11,6 +11,7 @@ import com.digitalmango.wildman.tools.Hud;
 
 public class MainGame extends Game {
 
+	public static int TIEMPO = 16;
 	public static final int BEST = 0;
 	public static int POINTS = 0;
 	public static int NUMERO_PARTIDAS = 0;

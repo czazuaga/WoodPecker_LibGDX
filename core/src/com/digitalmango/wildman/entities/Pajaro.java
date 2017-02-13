@@ -57,6 +57,8 @@ public class Pajaro {
 
         fx.update(delta);
         fx.sprite.draw(batch);
+
+
     }
 
     //Logic

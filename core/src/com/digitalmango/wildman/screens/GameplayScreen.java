@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.digitalmango.wildman.MainGame;
+import com.digitalmango.wildman.entities.Barra;
 import com.digitalmango.wildman.entities.GestorTroncos;
 import com.digitalmango.wildman.entities.Nube;
 import com.digitalmango.wildman.entities.Pajaro;
@@ -42,6 +43,7 @@ public class GameplayScreen extends BaseScreen {
     public MainGame mainGame;
     public GestorTroncos gestorTroncos;
     public Pajaro pajaro;
+    public Barra barra;
 
     public GameplayScreen(Game game, MainGame mainGame) {
         super(mainGame);
@@ -64,6 +66,7 @@ public class GameplayScreen extends BaseScreen {
         gestorTroncos = new GestorTroncos(this);
 
         pajaro = new Pajaro(mainGame);
+        barra = new Barra(mainGame);
 
         playerInputProcessor = new PlayerInputProcessor();
         inputMultiplexer = new InputMultiplexer();
@@ -105,6 +108,8 @@ public class GameplayScreen extends BaseScreen {
 
         floorSprite.draw(batch);
 
+        barra.update(delta);
+        barra.sprite.draw(batch);
         pajaro.update(delta, batch);
 
         batch.end();

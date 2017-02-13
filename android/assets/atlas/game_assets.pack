@@ -283,6 +283,118 @@ tap
   orig: 48, 32
   offset: 0, 0
   index: -1
+bar1
+  rotate: false
+  xy: 373, 304
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar10
+  rotate: false
+  xy: 51, 25
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar11
+  rotate: false
+  xy: 373, 294
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar12
+  rotate: false
+  xy: 51, 15
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar13
+  rotate: false
+  xy: 373, 284
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar14
+  rotate: false
+  xy: 51, 5
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar15
+  rotate: false
+  xy: 439, 330
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar16
+  rotate: false
+  xy: 439, 320
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar2
+  rotate: false
+  xy: 504, 330
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar3
+  rotate: false
+  xy: 504, 320
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar4
+  rotate: false
+  xy: 569, 330
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar5
+  rotate: false
+  xy: 569, 320
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar6
+  rotate: false
+  xy: 439, 310
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar7
+  rotate: false
+  xy: 504, 310
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar8
+  rotate: false
+  xy: 569, 310
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar9
+  rotate: false
+  xy: 438, 300
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
 cloud2
   rotate: false
   xy: 985, 1005
