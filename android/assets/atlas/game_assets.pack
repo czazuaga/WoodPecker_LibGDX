@@ -5,421 +5,489 @@ filter: Nearest,Nearest
 repeat: none
 arbustos
   rotate: false
-  xy: 1, 621
+  xy: 1, 603
   size: 240, 400
   orig: 240, 400
+  offset: 0, 0
+  index: -1
+services_panel
+  rotate: false
+  xy: 1, 413
+  size: 199, 188
+  orig: 199, 188
   offset: 0, 0
   index: -1
 floor
   rotate: false
-  xy: 1, 219
-  size: 240, 400
-  orig: 240, 400
-  offset: 0, 0
-  index: -1
-sky
-  rotate: false
-  xy: 243, 621
-  size: 240, 400
-  orig: 240, 400
-  offset: 0, 0
-  index: -1
-splash
-  rotate: false
-  xy: 243, 219
+  xy: 202, 201
   size: 240, 400
   orig: 240, 400
   offset: 0, 0
   index: -1
 fx
   rotate: false
-  xy: 485, 750
+  xy: 1, 140
   size: 199, 271
   orig: 199, 271
   offset: 0, 0
   index: -1
-gameover_panel
+pause
   rotate: false
-  xy: 485, 477
-  size: 199, 271
-  orig: 199, 271
+  xy: 243, 603
+  size: 240, 400
+  orig: 240, 400
   offset: 0, 0
   index: -1
-title_panel
+sky
   rotate: false
-  xy: 686, 750
-  size: 199, 271
-  orig: 199, 271
+  xy: 444, 201
+  size: 240, 400
+  orig: 240, 400
   offset: 0, 0
   index: -1
-tronco
+splash
   rotate: false
-  xy: 1, 153
-  size: 240, 64
-  orig: 240, 64
+  xy: 485, 603
+  size: 240, 400
+  orig: 240, 400
   offset: 0, 0
   index: -1
-tronco_rama_left
+tap1
   rotate: false
-  xy: 1, 87
-  size: 240, 64
-  orig: 240, 64
+  xy: 686, 201
+  size: 240, 400
+  orig: 240, 400
   offset: 0, 0
   index: -1
-tronco_rama_right
+tap2
   rotate: false
-  xy: 243, 153
-  size: 240, 64
-  orig: 240, 64
+  xy: 727, 603
+  size: 240, 400
+  orig: 240, 400
   offset: 0, 0
   index: -1
-cloud3
+achievement_button
   rotate: false
-  xy: 485, 411
-  size: 128, 64
-  orig: 128, 64
-  offset: 0, 0
-  index: -1
-player_attack1
-  rotate: false
-  xy: 686, 652
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-player_attack2
-  rotate: false
-  xy: 887, 925
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-player_attack3
-  rotate: false
-  xy: 485, 313
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-player_attack4
-  rotate: false
-  xy: 686, 554
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-player_death1
-  rotate: false
-  xy: 784, 652
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-player_death2
-  rotate: false
-  xy: 887, 827
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-player_death4
-  rotate: false
-  xy: 887, 827
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-player_death3
-  rotate: false
-  xy: 485, 215
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-player_death5
-  rotate: false
-  xy: 784, 554
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-player_death6
-  rotate: false
-  xy: 686, 456
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-player_death8
-  rotate: false
-  xy: 686, 456
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-player_death7
-  rotate: false
-  xy: 784, 456
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-player_idle1
-  rotate: false
-  xy: 887, 729
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-player_idle2
-  rotate: false
-  xy: 882, 631
-  size: 96, 96
-  orig: 96, 96
-  offset: 0, 0
-  index: -1
-play_button
-  rotate: false
-  xy: 1, 35
+  xy: 928, 551
   size: 84, 50
   orig: 84, 50
-  offset: 0, 0
-  index: -1
-ranking_button
-  rotate: false
-  xy: 243, 101
-  size: 84, 50
-  orig: 84, 50
-  offset: 0, 0
-  index: -1
-cloud1
-  rotate: false
-  xy: 485, 181
-  size: 64, 32
-  orig: 64, 32
   offset: 0, 0
   index: -1
 flower_happy1
   rotate: false
-  xy: 615, 427
+  xy: 969, 955
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_happy2
   rotate: false
-  xy: 882, 581
+  xy: 969, 905
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_happy4
   rotate: false
-  xy: 882, 581
+  xy: 969, 905
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_happy3
   rotate: false
-  xy: 87, 37
+  xy: 969, 855
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping1
   rotate: false
-  xy: 329, 103
+  xy: 969, 805
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping2
   rotate: false
-  xy: 882, 531
+  xy: 969, 755
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping3
   rotate: false
-  xy: 137, 37
+  xy: 969, 705
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping4
   rotate: false
-  xy: 379, 103
+  xy: 969, 655
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
 flower_sleeping5
   rotate: false
-  xy: 882, 481
+  xy: 969, 605
   size: 48, 48
   orig: 48, 48
   offset: 0, 0
   index: -1
-flower_sleeping6
+back_button
   rotate: false
-  xy: 187, 37
-  size: 48, 48
-  orig: 48, 48
+  xy: 928, 499
+  size: 84, 50
+  orig: 84, 50
   offset: 0, 0
   index: -1
-flower_sleeping7
+games_button
   rotate: false
-  xy: 429, 103
-  size: 48, 48
-  orig: 48, 48
+  xy: 928, 447
+  size: 84, 50
+  orig: 84, 50
   offset: 0, 0
   index: -1
-flower_sleeping8
+play_button
   rotate: false
-  xy: 932, 581
-  size: 48, 48
-  orig: 48, 48
+  xy: 928, 395
+  size: 84, 50
+  orig: 84, 50
   offset: 0, 0
   index: -1
-tap
+ranking_button
   rotate: false
-  xy: 1, 1
-  size: 48, 32
-  orig: 48, 32
+  xy: 928, 343
+  size: 84, 50
+  orig: 84, 50
+  offset: 0, 0
+  index: -1
+rate_button
+  rotate: false
+  xy: 928, 291
+  size: 84, 50
+  orig: 84, 50
+  offset: 0, 0
+  index: -1
+cloud1
+  rotate: false
+  xy: 928, 257
+  size: 64, 32
+  orig: 64, 32
   offset: 0, 0
   index: -1
 bar1
   rotate: false
-  xy: 243, 91
+  xy: 928, 247
   size: 63, 8
   orig: 63, 8
   offset: 0, 0
   index: -1
 bar10
   rotate: false
-  xy: 485, 171
+  xy: 928, 237
   size: 63, 8
   orig: 63, 8
   offset: 0, 0
   index: -1
 bar11
   rotate: false
-  xy: 485, 161
+  xy: 928, 227
   size: 63, 8
   orig: 63, 8
   offset: 0, 0
   index: -1
 bar12
   rotate: false
-  xy: 485, 151
+  xy: 928, 217
   size: 63, 8
   orig: 63, 8
   offset: 0, 0
   index: -1
 bar13
   rotate: false
-  xy: 243, 81
+  xy: 928, 207
   size: 63, 8
   orig: 63, 8
   offset: 0, 0
   index: -1
 bar14
   rotate: false
-  xy: 479, 141
+  xy: 928, 197
   size: 63, 8
   orig: 63, 8
-  offset: 0, 0
-  index: -1
-bar15
-  rotate: false
-  xy: 479, 131
-  size: 63, 8
-  orig: 63, 8
-  offset: 0, 0
-  index: -1
-bar16
-  rotate: false
-  xy: 479, 121
-  size: 63, 8
-  orig: 63, 8
-  offset: 0, 0
-  index: -1
-bar2
-  rotate: false
-  xy: 479, 111
-  size: 63, 8
-  orig: 63, 8
-  offset: 0, 0
-  index: -1
-bar3
-  rotate: false
-  xy: 479, 101
-  size: 63, 8
-  orig: 63, 8
-  offset: 0, 0
-  index: -1
-bar4
-  rotate: false
-  xy: 237, 71
-  size: 63, 8
-  orig: 63, 8
-  offset: 0, 0
-  index: -1
-bar5
-  rotate: false
-  xy: 237, 61
-  size: 63, 8
-  orig: 63, 8
-  offset: 0, 0
-  index: -1
-bar6
-  rotate: false
-  xy: 237, 51
-  size: 63, 8
-  orig: 63, 8
-  offset: 0, 0
-  index: -1
-bar7
-  rotate: false
-  xy: 237, 41
-  size: 63, 8
-  orig: 63, 8
-  offset: 0, 0
-  index: -1
-bar8
-  rotate: false
-  xy: 237, 31
-  size: 63, 8
-  orig: 63, 8
-  offset: 0, 0
-  index: -1
-bar9
-  rotate: false
-  xy: 329, 93
-  size: 63, 8
-  orig: 63, 8
-  offset: 0, 0
-  index: -1
-cloud2
-  rotate: false
-  xy: 985, 1005
-  size: 32, 16
-  orig: 32, 16
   offset: 0, 0
   index: -1
 buttons
   rotate: false
-  xy: 583, 393
+  xy: 993, 239
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 black
   rotate: false
-  xy: 237, 81
+  xy: 994, 285
   size: 4, 4
   orig: 4, 4
+  offset: 0, 0
+  index: -1
+player_attack1
+  rotate: false
+  xy: 202, 103
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_attack2
+  rotate: false
+  xy: 1, 42
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_attack3
+  rotate: false
+  xy: 99, 42
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_attack4
+  rotate: false
+  xy: 300, 103
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death1
+  rotate: false
+  xy: 398, 103
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death2
+  rotate: false
+  xy: 496, 103
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death4
+  rotate: false
+  xy: 496, 103
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+tronco
+  rotate: false
+  xy: 594, 135
+  size: 240, 64
+  orig: 240, 64
+  offset: 0, 0
+  index: -1
+cloud3
+  rotate: false
+  xy: 836, 131
+  size: 128, 64
+  orig: 128, 64
+  offset: 0, 0
+  index: -1
+tronco_rama_left
+  rotate: false
+  xy: 594, 69
+  size: 240, 64
+  orig: 240, 64
+  offset: 0, 0
+  index: -1
+player_death3
+  rotate: false
+  xy: 836, 33
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death5
+  rotate: false
+  xy: 197, 5
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death6
+  rotate: false
+  xy: 295, 5
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_death8
+  rotate: false
+  xy: 295, 5
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+tronco_rama_right
+  rotate: false
+  xy: 393, 3
+  size: 240, 64
+  orig: 240, 64
+  offset: 0, 0
+  index: -1
+flower_sleeping6
+  rotate: false
+  xy: 934, 81
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flower_sleeping7
+  rotate: false
+  xy: 966, 147
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+bar15
+  rotate: false
+  xy: 934, 71
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+pause_button
+  rotate: false
+  xy: 984, 113
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+cloud2
+  rotate: false
+  xy: 984, 95
+  size: 32, 16
+  orig: 32, 16
+  offset: 0, 0
+  index: -1
+bar16
+  rotate: false
+  xy: 934, 61
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar2
+  rotate: false
+  xy: 934, 51
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+flower_sleeping8
+  rotate: false
+  xy: 934, 1
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+bar3
+  rotate: false
+  xy: 1, 32
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar4
+  rotate: false
+  xy: 66, 32
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar5
+  rotate: false
+  xy: 131, 32
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar6
+  rotate: false
+  xy: 1, 22
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar7
+  rotate: false
+  xy: 66, 22
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar8
+  rotate: false
+  xy: 131, 22
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+bar9
+  rotate: false
+  xy: 1, 12
+  size: 63, 8
+  orig: 63, 8
+  offset: 0, 0
+  index: -1
+
+game_assets2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+gameover_panel
+  rotate: false
+  xy: 1, 197
+  size: 199, 271
+  orig: 199, 271
+  offset: 0, 0
+  index: -1
+record_panel
+  rotate: false
+  xy: 202, 197
+  size: 199, 271
+  orig: 199, 271
+  offset: 0, 0
+  index: -1
+title_panel
+  rotate: false
+  xy: 403, 197
+  size: 199, 271
+  orig: 199, 271
+  offset: 0, 0
+  index: -1
+player_death7
+  rotate: false
+  xy: 1, 99
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_idle1
+  rotate: false
+  xy: 604, 372
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+player_idle2
+  rotate: false
+  xy: 1, 1
+  size: 96, 96
+  orig: 96, 96
   offset: 0, 0
   index: -1
